@@ -47,7 +47,7 @@ const Signin = () => {
       ;
       <Button
         colorScheme="blue"
-        width={"90%"}
+        width={"100%"}
         style={{ marginTop: 15 }}
         onClick={submitHandler}
       >

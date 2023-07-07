@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "dev": "node backend/server.js",
     "start": "nodemon backend/server.js"
   },
   "author": "Ansh Kapoor",

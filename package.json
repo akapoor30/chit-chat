@@ -1,4 +1,5 @@
 {
+  "homepage": "http://akapoor30.github.io/chit-chat",
   "name": "chit-chat",
   "version": "1.0.0",
   "description": "",
@@ -19,5 +20,8 @@
     "mongoose": "^7.3.2",
     "nodemon": "^2.0.22",
     "socket.io": "^4.7.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }

@@ -17,7 +17,6 @@ const MyChats = ({ fetchAgain }) => {
   const toast = useToast();
 
   const fetchChats = async () => {
-    // console.log(user._id);
     try {
       const config = {
         headers: {
@@ -29,8 +28,8 @@ const MyChats = ({ fetchAgain }) => {
       setChats(data);
     } catch (error) {
       toast({
-        title: "Error Occured!",
-        description: "Failed to Load the chats",
+        title: "Error Occurred!",
+        description: "Failed to load the chats",
         status: "error",
         duration: 5000,
         isClosable: true,
@@ -48,8 +47,9 @@ const MyChats = ({ fetchAgain }) => {
   return (
     <Box
       d={{ base: selectedChat ? "none" : "flex", md: "flex" }}
+      float={"left"}
       flexDir="column"
-      alignItems="center"
+      alignItems="flex-start"
       p={3}
       bg="white"
       w={{ base: "100%", md: "31%" }}

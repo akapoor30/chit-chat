@@ -9,7 +9,7 @@ import axios from "axios";
 import { ArrowBackIcon } from "@chakra-ui/icons";
 import ProfileModal from "./miscellaneous/ProfileModal";
 import ScrollableChat from "./ScrollableChat";
-import Lottie from "react-lottie";
+import Lottie from "lottie-react";
 import animationData from "../animations/typing.json";
 
 import io from "socket.io-client";
@@ -251,8 +251,14 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
         </>
       ) : (
         // to get socket.io on same page
-        <Box d="flex" alignItems="center" justifyContent="center" h="100%">
-          <Text fontSize="3xl" pb={3} fontFamily="Work sans">
+        <Box
+          d="flex"
+          alignItems="center"
+          float={"left"}
+          justifyContent="center"
+          h="100%"
+        >
+          <Text fontSize="3xl" pb={3} float={"left"} fontFamily="Work sans">
             Click on a user to start chatting
           </Text>
         </Box>
